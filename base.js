@@ -51,6 +51,7 @@ difficile.addEventListener("click", function () {
     perdu_6.style.display = 'block';
 });
 
+let valeur;
 for (valeur of rejouer) {
     valeur.addEventListener("click", function () {
         window.location.reload();
