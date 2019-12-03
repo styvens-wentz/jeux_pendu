@@ -1,0 +1,145 @@
+body {
+    width: 100%;
+    margin: 0;
+    background: #5f5f5f;
+}
+
+#titre {
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    color: sienna;
+    font-weight: bold;
+    font-family: Perpetua, sans-serif;
+    background: #9b9b9b;
+}
+
+#le_pendu {
+    margin: 30px auto auto;
+    border: #8c8c8c ridge 10px;
+    width: 400px;
+    height: 400px;
+    background: #b9b9b9;
+}
+
+#socle {
+    width: 150px;
+    border: 2px solid black;
+    float: right;
+    margin-right: 20px;
+    margin-top: 350px;
+}
+
+#barre_ver {
+    height: 250px;
+    width: 0;
+    border: 2px solid black;
+    float: right;
+    margin-top: 100px;
+    margin-right: -75px;
+}
+
+#barre_hor {
+    width: 100px;
+    border: 2px solid black;
+    float: right;
+    margin-top: 100px;
+    margin-right: -71px;
+}
+
+#corde {
+    width: 0;
+    height: 40px;
+    border: 1px solid black;
+    float: right;
+    margin-top: 100px;
+}
+
+#tete {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50px;
+    float: right;
+    margin-top: 140px;
+    margin-right: -21px;
+}
+
+#corp {
+    display: none;
+    border: 0.5px solid black;
+    float: right;
+    width: 0;
+    height: 100px;
+    margin-top: 180px;
+    margin-right: -21px;
+}
+
+#bras_gauche {
+    display: none;
+    border: 0.5px solid black;
+    float: right;
+    width: 0;
+    height: 45px;
+    transform: rotate(45deg);
+    margin-top: 180px;
+    margin-right: -36px;
+}
+
+#bras_droit {
+    display: none;
+    border: 0.5px solid black;
+    float: right;
+    width: 0;
+    height: 45px;
+    transform: rotate(135deg);
+    margin-top: 180px;
+    margin-right: -6px;
+}
+
+#jambe_gauche {
+    display: none;
+    border: 0.5px solid black;
+    float: right;
+    width: 0;
+    height: 45px;
+    transform: rotate(-45deg);
+    margin-top: 271px;
+    margin-right: -37px;
+}
+
+#jambe_droite {
+    display: none;
+    border: 0.5px solid black;
+    float: right;
+    width: 0;
+    height: 45px;
+    transform: rotate(-135deg);
+    margin-top: 271px;
+    margin-right: -5px;
+}
+
+#lettre_a_trouver {
+    text-align: center;
+    margin: 25px auto auto;
+    font-size: 40px;
+    color: indigo;
+    background: #8c8c8c;
+    width: 400px;
+    border-radius: 25px;
+    border: ridge grey 5px;
+    font-weight: bold;
+    font-family: Georgia, sans-serif;
+}
+
+#lettre_trouver {
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 25px;
+    color: #00c300;
+    font-weight: bold;
+}
+
+
