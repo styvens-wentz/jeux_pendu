@@ -30,7 +30,8 @@ body {
     margin-top: 350px;
 }
 
-#barre_ver {
+#perdu_1 {
+    display: none;
     height: 250px;
     width: 0;
     border: 2px solid black;
@@ -39,7 +40,8 @@ body {
     margin-right: -75px;
 }
 
-#barre_hor {
+#perdu_2 {
+    display: none;
     width: 100px;
     border: 2px solid black;
     float: right;
@@ -47,7 +49,8 @@ body {
     margin-right: -71px;
 }
 
-#corde {
+#perdu_3 {
+    display: none;
     width: 0;
     height: 40px;
     border: 1px solid black;
@@ -55,7 +58,7 @@ body {
     margin-top: 100px;
 }
 
-#tete {
+#perdu_4 {
     display: none;
     width: 40px;
     height: 40px;
@@ -66,7 +69,7 @@ body {
     margin-right: -21px;
 }
 
-#corp {
+#perdu_5 {
     display: none;
     border: 0.5px solid black;
     float: right;
@@ -76,7 +79,7 @@ body {
     margin-right: -21px;
 }
 
-#bras_gauche {
+#perdu_6 {
     display: none;
     border: 0.5px solid black;
     float: right;
@@ -87,7 +90,7 @@ body {
     margin-right: -36px;
 }
 
-#bras_droit {
+#perdu_7 {
     display: none;
     border: 0.5px solid black;
     float: right;
@@ -98,7 +101,7 @@ body {
     margin-right: -6px;
 }
 
-#jambe_gauche {
+#perdu_8 {
     display: none;
     border: 0.5px solid black;
     float: right;
@@ -109,7 +112,7 @@ body {
     margin-right: -37px;
 }
 
-#jambe_droite {
+#perdu_9 {
     display: none;
     border: 0.5px solid black;
     float: right;
@@ -133,13 +136,72 @@ body {
     font-family: Georgia, sans-serif;
 }
 
-#lettre_trouver {
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
+
+
+#clavier {
     margin-top: 25px;
-    color: #00c300;
-    font-weight: bold;
+    background: #232323;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+#clavier tr {
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px
+}
+
+#clavier tr td {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background: #141414;
+    color: white;
+    font-family: 'Arial Black',sans-serif;
+    border: outset 2px darkgrey;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+
+#mot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+#mot tr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#mot td {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom:2px solid #00c300;
+    width: 50px;
+    text-align: center;
+}
+
+
+#mot p{
+    width: 50px;
+    font-size: 40px;
+    margin-bottom: -10px;
+    color: #00c300;
+    font-family: "Bodoni MT", fantasy;
+    font-weight: bold;
+    visibility: hidden;
+}
 
