@@ -73,23 +73,23 @@ for(let i=0; i<tailleMot; i++) {
 for(let i=0; i<tailleMot; i++) tableauMot[i]=document.getElementById(i);
 
 
-function changeCouleur(element,couleur){
-    element.style.backgroundColor=couleur;
+function changeDisplay(element,display){
+    element.style.display=display;
 }
 
 
 function proposer(element){
     let i;
-    if(element.style.backgroundColor==="lightGreen" ||fini) return;
+    if(element.style.display==="none" ||fini) return;
 
     const lettre = element.innerHTML;
-    changeCouleur(element,"lightGreen");
+    changeDisplay(element,"none");
 
     let trouve = false;
 
     for(i = 0; i < tailleMot; i++) {
         if(tableauMot[i].innerHTML === lettre) {
-            tableauMot[i].style.visibility='visible';
+            tableauMot[i].style.display='block';
             trouve=true;
             lettresTrouvees++;
         }
@@ -103,7 +103,7 @@ function proposer(element){
             clavier.style.display = 'none';
             perdu.style.display = 'flex';
             mot_trouver.innerHTML = 'Le mot était';
-            for(i = 0; i<tailleMot; i++) tableauMot[i].style.visibility='visible';
+            for(i = 0; i<tailleMot; i++) tableauMot[i].style.display='block';
             fini=true;
         }
     }

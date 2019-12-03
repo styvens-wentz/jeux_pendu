@@ -236,12 +236,35 @@ body {
     color: #00c300;
     font-family: "Bodoni MT", fantasy;
     font-weight: bold;
-    visibility: hidden;
+    display: none;
 }
 
 
 
-#gagner, #perdu {
+#perdu {
+     display: none;
+     flex-direction: column;
+     place-items: center;
+     margin-top: 50px;
+     font-size: 50px;
+ }
+
+#perdu input {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 220px;
+    height: 80px;
+    margin: 20px;
+    background: rgb(55, 55, 55);
+    color: white;
+    font-size: 45px;
+    border-radius: 25px;
+    border: ridge 10px #a5a5a5;
+    font-family: "Adobe Devanagari", serif;
+}
+
+#gagner {
     display: none;
     flex-direction: column;
     place-items: center;
@@ -249,7 +272,7 @@ body {
     font-size: 50px;
 }
 
-#gagner input, #perdu input {
+#gagner input {
     display: flex;
     justify-content: center;
     place-items: center;
