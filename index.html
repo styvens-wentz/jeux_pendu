@@ -13,59 +13,78 @@
 <body>
 <div id="titre">JEUX DU PENDU</div>
 
-<div id="le_pendu">
-    <div id="socle"></div>
-    <div id="perdu_1"></div>
-    <div id="perdu_2"></div>
-    <div id="perdu_3"></div>
-    <div id="perdu_4"></div>
-    <div id="perdu_5"></div>
-    <div id="perdu_6"></div>
-    <div id="perdu_7"></div>
-    <div id="perdu_8"></div>
-    <div id="perdu_9"></div>
+<div id="niveaux">
+    <h1>CHOISISSEZ VOTRE NIVEAUX DE DIFFICULTÉ</h1>
+    <input type="button" value="Facile" id="facile">
+    <input type="button" value="Normale" id="normale">
+    <input type="button" value="Difficile" id="difficile">
 </div>
 
-<div id="lettre_a_trouver">
-    Mot de <span id="nombre_lettre"></span> lettres
+<div id="jeux">
+    <div id="le_pendu">
+        <div id="socle"></div>
+        <div id="perdu_1"></div>
+        <div id="perdu_2"></div>
+        <div id="perdu_3"></div>
+        <div id="perdu_4"></div>
+        <div id="perdu_5"></div>
+        <div id="perdu_6"></div>
+        <div id="perdu_7"></div>
+        <div id="perdu_8"></div>
+        <div id="perdu_9"></div>
+    </div>
+
+    <div id="lettre_a_trouver">
+
+    </div>
+
+
+    <table id="mot">
+        <tr id="lettre_trouver"></tr>
+    </table>
+
+    <table id="clavier">
+        <tr>
+            <td onclick="proposer(this);">A</td>
+            <td onclick="proposer(this);">B</td>
+            <td onclick="proposer(this);">C</td>
+            <td onclick="proposer(this);">D</td>
+            <td onclick="proposer(this);">E</td>
+            <td onclick="proposer(this);">F</td>
+            <td onclick="proposer(this);">G</td>
+            <td onclick="proposer(this);">H</td>
+            <td onclick="proposer(this);">I</td>
+            <td onclick="proposer(this);">J</td>
+            <td onclick="proposer(this);">K</td>
+            <td onclick="proposer(this);">L</td>
+            <td onclick="proposer(this);">M</td>
+            <td onclick="proposer(this);">N</td>
+            <td onclick="proposer(this);">O</td>
+            <td onclick="proposer(this);">P</td>
+            <td onclick="proposer(this);">Q</td>
+            <td onclick="proposer(this);">R</td>
+            <td onclick="proposer(this);">S</td>
+            <td onclick="proposer(this);">T</td>
+            <td onclick="proposer(this);">U</td>
+            <td onclick="proposer(this);">V</td>
+            <td onclick="proposer(this);">W</td>
+            <td onclick="proposer(this);">X</td>
+            <td onclick="proposer(this);">Y</td>
+            <td onclick="proposer(this);">Z</td>
+        </tr>
+    </table>
+
+    <div id="gagner">
+        FÉLICITATION VOUS AVEZ GAGNÉ
+        <input type="button" value="Rejouer" class="rejouer">
+    </div>
+
+    <div id="perdu">
+        DOMMAGE VOUS AVEZ PERDU
+        <input type="button" value="Rejouer" class="rejouer">
+    </div>
+
 </div>
-
-
-<table id="mot">
-    <tr id="lettre_trouver"></tr>
-</table>
-
-<table id="clavier">
-    <tr>
-        <td onclick="proposer(this);" >A</td>
-        <td onclick="proposer(this);" >B</td>
-        <td onclick="proposer(this);" >C</td>
-        <td onclick="proposer(this);" >D</td>
-        <td onclick="proposer(this);" >E</td>
-        <td onclick="proposer(this);" >F</td>
-        <td onclick="proposer(this);" >G</td>
-        <td onclick="proposer(this);" >H</td>
-        <td onclick="proposer(this);" >I</td>
-        <td onclick="proposer(this);" >J</td>
-        <td onclick="proposer(this);" >K</td>
-        <td onclick="proposer(this);" >L</td>
-        <td onclick="proposer(this);" >M</td>
-        <td onclick="proposer(this);" >N</td>
-        <td onclick="proposer(this);" >O</td>
-        <td onclick="proposer(this);" >P</td>
-        <td onclick="proposer(this);" >Q</td>
-        <td onclick="proposer(this);" >R</td>
-        <td onclick="proposer(this);" >S</td>
-        <td onclick="proposer(this);" >T</td>
-        <td onclick="proposer(this);" >U</td>
-        <td onclick="proposer(this);" >V</td>
-        <td onclick="proposer(this);" >W</td>
-        <td onclick="proposer(this);" >X</td>
-        <td onclick="proposer(this);" >Y</td>
-        <td onclick="proposer(this);" >Z</td>
-    </tr>
-</table>
-
 <!-- Optional -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
